@@ -1,0 +1,8 @@
+.navbar-static-top{
+    position: fixed;
+    width: 100%;
+}
+
+li.nav-link:hover{
+cursor: pointer;
+}

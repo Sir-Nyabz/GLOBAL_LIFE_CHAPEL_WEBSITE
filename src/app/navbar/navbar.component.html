@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-static-top">
+
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav list-line ml-auto">
+  
+        <li class="nav-item list-line-item mr-4">
+          <a class="nav-link active" aria-current="page" href="#" routerLink="/Home" routerLinkActive="active" (click)="toHome()">Home</a>
+        </li>
+  
+        <li class="nav-item dropdown list-line-item mr-4">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-expanded="false">
+            About
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li class="dropdown-item nav-link" id="dropdown" (click)="toGlc()" routerLinkActive="active">Global Life Chapel</li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-item nav-link" id="dropdown" (click)="toGeneralOverseer()" routerLinkActive="active">General Overseer</li>
+          </ul>
+        </li>
+  
+        <li class="nav-item list-line-item mr-4 nav-link" (click)="toMorningDevotion()" routerLinkActive="active">
+            Morning Devotion
+        </li>
+  
+        <li class="nav-item list-line-item mr-4 nav-link" (click)="toChristForAll()" routerLinkActive="active">
+            Christ fo all
+        </li>
+  
+        <li class="nav-item list-line-item mr-4 nav-link" (click)="toContactUs()" routerLinkActive="active">
+            Contact us
+        </li>
+  
+        <li class="nav-item list-line-item mr-4 nav-link" (click)="toGallery()" routerLinkActive="active">
+            Gallery
+        </li>
+  
+        <li class="nav-item list-line-item mr-4 nav-link" (click)="toGive()" routerLinkActive="active">
+          Give
+        </li>
+
+        <li class="nav-item list-line-item mr-4 nav-link" (click)="toSchedule()" routerLinkActive="active">
+            Schedule
+          </li>
+  
+      </ul>
+    </div>
+  
+  </nav>
