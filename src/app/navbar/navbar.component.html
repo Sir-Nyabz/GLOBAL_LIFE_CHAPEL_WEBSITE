@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="navbar-nav list-line ml-auto">
 
-        <li class="nav-item list-line-item mr-4 nav-link" (click)="toHome()" routerLinkActive="active">
+        <li class="nav-item list-line-item mr-4 nav-link" (click)="toSchedule('home')" routerLinkActive="active">
           Home
       </li>
   
@@ -22,35 +22,39 @@
             About
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li class="dropdown-item nav-link" id="dropdown" (click)="toGlc()" routerLinkActive="active">Global Life Chapel</li>
+            <li class="dropdown-item nav-link" id="dropdown" (click)="toSchedule('aboutglc')" routerLinkActive="active">Global Life Chapel</li>
             <li>
               <hr class="dropdown-divider">
             </li>
-            <li class="dropdown-item nav-link" id="dropdown" (click)="toGeneralOverseer()" routerLinkActive="active">General Overseer</li>
+            <li class="dropdown-item nav-link" id="dropdown" (click)="toSchedule('generaloverseer')" routerLinkActive="active">General Overseer</li>
           </ul>
         </li>
   
-        <li class="nav-item list-line-item mr-4 nav-link" (click)="toMorningDevotion()" routerLinkActive="active">
+        <li class="nav-item list-line-item mr-4 nav-link" (click)="toSchedule('morningdevotion')" routerLinkActive="active">
             Morning Devotion
         </li>
   
-        <li class="nav-item list-line-item mr-4 nav-link" (click)="toChristForAll()" routerLinkActive="active">
-            Christ fo all
+        <li class="nav-item list-line-item mr-4 nav-link" (click)="toSchedule('forall')" routerLinkActive="active">
+            Christ for all
         </li>
+
+        <li class="nav-item list-line-item mr-4 nav-link" (click)="toSchedule('minordep')" routerLinkActive="active">
+          Ministries And Departments
+      </li>
   
-        <li class="nav-item list-line-item mr-4 nav-link" (click)="toContactUs()" routerLinkActive="active">
+        <li class="nav-item list-line-item mr-4 nav-link" (click)="toSchedule('contact')" routerLinkActive="active">
             Contact us
         </li>
   
-        <li class="nav-item list-line-item mr-4 nav-link" (click)="toGallery()" routerLinkActive="active">
+        <li class="nav-item list-line-item mr-4 nav-link" (click)="toSchedule('gallery')" routerLinkActive="active">
             Gallery
         </li>
   
-        <li class="nav-item list-line-item mr-4 nav-link" (click)="toGive()" routerLinkActive="active">
+        <li class="nav-item list-line-item mr-4 nav-link" (click)="toSchedule('give')" routerLinkActive="active">
           Give
         </li>
 
-        <li class="nav-item list-line-item mr-4 nav-link" (click)="toSchedule()" routerLinkActive="active">
+        <li class="nav-item list-line-item mr-4 nav-link" (click)="toSchedule('schedule')" routerLinkActive="active">
             Schedule
           </li>
   

@@ -26,3 +26,36 @@ hr.rule{
     animation-direction: normal;
     animation-fill-mode: none;
 }
+
+#welcome1 span{
+    position: relative;
+    animation: slide 4s steps(10) infinite;
+}
+
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+    
+}
+
+#welcome1 span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-left: 2px solid greenyellow;
+    position: relative;
+    top: 0;
+    animation: typing 6s steps(4) infinite;
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+    
+}
