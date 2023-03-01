@@ -17,7 +17,7 @@ hr.rule{
     }
 }
 
-.container{
+.show1{
     animation-name: slideIn;
     animation-duration: 1s;
     animation-timing-function:ease-in ;
@@ -27,35 +27,14 @@ hr.rule{
     animation-fill-mode: none;
 }
 
-#welcome1 span{
+.show{
     position: relative;
-    animation: slide 4s steps(10) infinite;
+    transform: translateX(-550px);
+    opacity: 0;
+    transition:all 1s ease;
 }
 
-@keyframes slide {
-    100%{
-        top: -360px;
-    }
-    
-}
-
-#welcome1 span::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgb(255, 255, 255);
-    border-left: 2px solid greenyellow;
-    position: relative;
-    top: 0;
-    animation: typing 6s steps(4) infinite;
-}
-
-@keyframes typing {
-    100%{
-        left: 100%;
-        margin: 0 -35px 0 35px;
-    }
-    
+.show.active{
+    transform: translateX(0px);
+    opacity: 1;
 }
