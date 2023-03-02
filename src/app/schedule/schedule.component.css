@@ -1,5 +1,5 @@
 #section{
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),url("/assets/01.jpg");
+    background: linear-gradient(rgba(150, 184, 95, 0.6), rgba(144, 201, 22, 0.5)),url("/assets/01.jpg");
     background-size: cover;
     background-attachment: fixed;
     -moz-background-size: cover;

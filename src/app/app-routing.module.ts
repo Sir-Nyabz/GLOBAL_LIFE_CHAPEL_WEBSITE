@@ -8,7 +8,7 @@ import { MorningDevotionComponent } from './morning-devotion/morning-devotion.co
 import { ChristForAllComponent } from './christ-for-all/christ-for-all.component';
 import { MinistriesOrDepartmentsComponent } from './ministries-or-departments/ministries-or-departments.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
+
 
 const routes: Routes = [
   {path:'', redirectTo:"/home", pathMatch:"full"},
@@ -19,8 +19,7 @@ const routes: Routes = [
   {path:"christforall", component: ChristForAllComponent},
   {path: "give", component: GiveComponent},
   {path: "ministriesordepartments", component: MinistriesOrDepartmentsComponent },
-  {path: "gallery", component: GalleryComponent },
-  {path: "contactus", component: ContactUsComponent }
+  {path: "gallery", component: GalleryComponent }
 ];
 
 @NgModule({
@@ -36,6 +35,5 @@ export const routingComponents=[
   ChristForAllComponent,
   GiveComponent,
   MinistriesOrDepartmentsComponent,
-  GalleryComponent,
-  ContactUsComponent
+  GalleryComponent
 ]
