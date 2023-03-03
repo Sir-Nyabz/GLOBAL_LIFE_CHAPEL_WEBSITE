@@ -10,6 +10,7 @@ export class MorningDevotionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  }
 
 }
+}
+

@@ -1,11 +1,5 @@
-section .background-image{
+.background-image{
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),url("/assets/Global Life Chapel morning devotion image.jpeg");
     background-image:url("/assets/Global Life Chapel morning devotion image.jpeg") ;
-    /* background-size: cover;
-    background-attachment: fixed;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    overflow: hidden;*/
     height: 900px; 
 }

@@ -1,6 +1,7 @@
 .navbar-static-top{
     position: fixed;
     width: 100%;
+    z-index: 1100;
 }
 
 li.nav-link:hover{

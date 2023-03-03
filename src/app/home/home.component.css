@@ -66,3 +66,14 @@ section{
       padding-bottom: 2em;
     }
   }
+
+  .copy{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .enterprise{
+    justify-content: flex-end;
+    offset: 2;
+  }

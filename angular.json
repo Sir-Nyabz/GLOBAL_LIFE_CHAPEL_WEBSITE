@@ -38,7 +38,8 @@
               "node_modules/popper.js/dist/umd/popper.min.js",
               
               "node_modules/datatables.net/js/jquery.dataTables.js",
-              "node_modules/sweetalert2/dist/sweetalert2.js"
+              "node_modules/sweetalert2/dist/sweetalert2.js",
+              "node_modules/scrollreveal/dist/scrollreveal.js"
             ]
           },
           "configurations": {
