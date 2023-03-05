@@ -14,9 +14,11 @@ cursor: pointer;
     }
 
     li.nav-link:hover{
-        text-decoration: underline;
-        transform: scale(1.5);
-        transition: transform .2s
+        color: white;
+        background-color: #000000;
+        transform: scale(1.2);
+        transition: transform .3s;
+        
     }
 }
 
