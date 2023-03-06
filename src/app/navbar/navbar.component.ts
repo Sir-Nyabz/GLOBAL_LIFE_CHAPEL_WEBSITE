@@ -9,12 +9,15 @@ export class NavbarComponent implements OnInit {
 
   constructor() { }
 
+  bootstrap: any;
+
   ngOnInit(): void {
+   
+
+
+
   }
   
-  // toSchedule(){
-  //   document.getElementById('schedule')?.scrollIntoView({behavior:"smooth"})
-  // }
 
   toSchedule(toggle : string){
     document.getElementById(toggle)?.scrollIntoView({behavior:"smooth"})

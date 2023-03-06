@@ -7,34 +7,14 @@ hr.rule{
     margin-left:330px;
 }
 
-@keyframes slideIn {
-    from{
-        transform: translateX(-300px);
-    }
-
-    to{
-        transform: translateX(0);
-    }
-}
-
-.show1{
-    animation-name: slideIn;
-    animation-duration: 1s;
-    animation-timing-function:ease-in ;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
-}
-
-.show{
+.reveal{
     position: relative;
-    transform: translateX(-550px);
+    transform: translateX(-150px);
     opacity: 0;
-    transition:all 1s ease;
+    transition:all 4s ease;
 }
 
-.show.active{
+.reveal.active{
     transform: translateX(0px);
     opacity: 1;
 }

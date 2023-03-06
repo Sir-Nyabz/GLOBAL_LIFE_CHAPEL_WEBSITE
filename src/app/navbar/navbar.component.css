@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 .navbar-static-top{
     position: fixed;
     width: 100%;
     z-index: 1100;
+    height: max-content;
 }
 
 li.nav-link:hover{
@@ -13,12 +16,23 @@ cursor: pointer;
         display: block;
     }
 
-    li.nav-link:hover{
-        color: white;
-        background-color: #000000;
+    li:hover.nav-link{   
+      font-family: 'Poppins ExtraBold'; 
+      font-weight: bolder;
+      color: white;
+      background: linear-gradient(rgba(150, 184, 95, 0.6), rgba(144, 201, 22, 0.5));
         transform: scale(1.2);
         transition: transform .3s;
-        
+        background-position-y:center;
+    }
+
+    .nav-item{
+      padding: 5px 0px 5px 15px;
+      margin: 15px 10px 10px 15px;
+    }
+
+    li:hover.dropdown-toggle{
+      color: red
     }
 }
 
@@ -31,4 +45,4 @@ cursor: pointer;
         margin-left: 10px;
     }
 }
-
+ 
