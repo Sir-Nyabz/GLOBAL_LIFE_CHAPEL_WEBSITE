@@ -21,9 +21,6 @@ cursor: pointer;
       font-weight: bolder;
       color: white;
       background: linear-gradient(rgba(150, 184, 95, 0.6), rgba(144, 201, 22, 0.5));
-        transform: scale(1.2);
-        transition: transform .3s;
-        background-position-y:center;
     }
 
     .nav-item{
