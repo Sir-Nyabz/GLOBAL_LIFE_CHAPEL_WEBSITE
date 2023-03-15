@@ -67,14 +67,4 @@ section{
     }
   }
 
-  .Copyright1{
-    display: flex;
-    text-align: right;
-    justify-content: right;
-  }
-
-  .enterprise1{
-    display: flex;
-    justify-content: right;
-    text-align: right;
-  }
+  

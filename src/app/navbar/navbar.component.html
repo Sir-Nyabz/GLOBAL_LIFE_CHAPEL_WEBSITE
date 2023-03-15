@@ -1,92 +1,95 @@
 <nav class="navbar navbar-expand-lg bg-light navbar-static-top" id="mainNav">
 
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="navbar-nav list-line ml-auto">
+  <a class="navbar-brand" href="#">
+    <img src="assets/GLOBAL,LIFE CHAPEL LOGO.jpg" alt="Logo" class="w3-circle">
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbar">
+    <ul class="navbar-nav list-line ml-auto">
 
-        <li class="nav-item list-line-item nav-link" (click)="toSchedule('home')" routerLinkActive="active">
-          Home
+      <li class="nav-item list-line-item nav-link" (click)="toSchedule('home')" routerLinkActive="active">
+        Home
       </li>
-  
-        <li class="nav-item dropdown list-line-item dropdown-toggle"
-           href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-expanded="false">
-            About
-          
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li class="dropdown-item nav-link" id="dropdown" (click)="toSchedule('aboutglc')" routerLinkActive="active">Global Life Chapel</li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li class="dropdown-item nav-link" id="dropdown" (click)="toSchedule('generaloverseer')" routerLinkActive="active">General Overseer</li>
-          </ul>
-        </li>
-  
-        <li class="nav-item list-line-item nav-link" (click)="toSchedule('morningdevotion')" routerLinkActive="active">
-            Morning Devotion
-        </li>
-  
-        <li class="nav-item list-line-item nav-link" (click)="toSchedule('forall')" routerLinkActive="active">
-            Christ for all
-        </li>
-        
-        <li class="nav-item list-line-item nav-link" (click)="toSchedule('schedule')" routerLinkActive="active">
-            Contact Us
+
+      <li class="nav-item dropdown list-line-item dropdown-toggle" href="#" id="navbarDropdown" role="button"
+        data-toggle="dropdown" aria-expanded="false">
+        About
+
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li class="dropdown-item nav-link" id="dropdown" (click)="toSchedule('aboutglc')" routerLinkActive="active">
+            Global Life Chapel</li>
+          <li>
+            <hr class="dropdown-divider">
           </li>
-  
-      </ul>
-    </div>
-  
-  </nav>
+          <li class="dropdown-item nav-link" id="dropdown" (click)="toSchedule('generaloverseer')"
+            routerLinkActive="active">General Overseer</li>
+        </ul>
+      </li>
 
-  <script>
-    window.addEventListener('DOMContentLoaded', event => {
+      <li class="nav-item list-line-item nav-link" (click)="toSchedule('morningdevotion')" routerLinkActive="active">
+        Morning Devotion
+      </li>
 
-// Navbar shrink function
-var navbarShrink = function () {
-    const navbarCollapsible = document.body.querySelector('#mainNav');
-    if (!navbarCollapsible) {
+      <li class="nav-item list-line-item nav-link" (click)="toSchedule('forall')" routerLinkActive="active">
+        Christ for all
+      </li>
+
+      <li class="nav-item list-line-item nav-link" (click)="toSchedule('schedule')" routerLinkActive="active">
+        Contact Us
+      </li>
+
+    </ul>
+  </div>
+
+</nav>
+
+<script>
+  window.addEventListener('DOMContentLoaded', event => {
+
+    // Navbar shrink function
+    var navbarShrink = function () {
+      const navbarCollapsible = document.body.querySelector('#mainNav');
+      if (!navbarCollapsible) {
         return;
-    }
-    if (window.scrollY === 0) {
+      }
+      if (window.scrollY === 0) {
         navbarCollapsible.classList.remove('navbar-shrink')
-    } else {
+      } else {
         navbarCollapsible.classList.add('navbar-shrink')
-    }
+      }
 
-};
+    };
 
-// Shrink the navbar 
-navbarShrink();
+    // Shrink the navbar 
+    navbarShrink();
 
-// Shrink the navbar when page is scrolled
-document.addEventListener('scroll', navbarShrink);
+    // Shrink the navbar when page is scrolled
+    document.addEventListener('scroll', navbarShrink);
 
-// Activate Bootstrap scrollspy on the main nav element
-const mainNav = document.body.querySelector('#mainNav');
-if (mainNav) {
-    new this.bootstrap.ScrollSpy(document.body, {
+    // Activate Bootstrap scrollspy on the main nav element
+    const mainNav = document.body.querySelector('#mainNav');
+    if (mainNav) {
+      new this.bootstrap.ScrollSpy(document.body, {
         target: '#mainNav',
         offset: 72,
-    });
-};
+      });
+    };
 
-// Collapse responsive navbar when toggler is visible
-const navbarToggler = document.body.querySelector('.navbar-toggler');
-const responsiveNavItems = [].slice.call(
-    document.querySelectorAll('#navbar .nav-link')
-);
-responsiveNavItems.map(function (responsiveNavItem) {
-    responsiveNavItem.addEventListener('click', () => {
+    // Collapse responsive navbar when toggler is visible
+    const navbarToggler = document.body.querySelector('.navbar-toggler');
+    const responsiveNavItems = [].slice.call(
+      document.querySelectorAll('#navbar .nav-link')
+    );
+    responsiveNavItems.map(function (responsiveNavItem) {
+      responsiveNavItem.addEventListener('click', () => {
         if (window.getComputedStyle(navbarToggler).display !== 'none') {
-            navbarToggler.click();
+          navbarToggler.click();
         }
+      });
     });
-});
 
-});
-  </script>
+  });
+</script>

@@ -1,24 +1,26 @@
 .background-image{
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),url("/assets/Global Life Chapel morning devotion image.jpeg");
-    background-image:url("/assets/Global Life Chapel morning devotion image.jpeg") ;
-    height: 900px; 
+    height: 100px;
+    width: 50px; 
     border-radius: 10px;
 }
 
-.devotion-description{
-    display: inline-block;
-    margin-top:373.8px;
+
+
+@media only screen and (min-width: 768px){
+    .devotion-description{
+        display: inline-block;
+        margin-top:373.8px;
+    }
+    
+    .devotion-row{
+        margin-top: 21%;
+    }
 }
 
-.reveal{
-    position: relative;
-    transform: translateY(-150px);
-    opacity: 0;
-    transition:all 2s ease;
-    transition-delay:0.1s;
+@media only screen and (max-width: 768px){
+    .devotion-row{
+        margin-top: 60%;
+    }
 }
 
-.reveal.active{
-    transform: translateY(0px);
-    opacity: 1;
-}
+
