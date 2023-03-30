@@ -16,7 +16,13 @@ export class AppComponent {
   constructor(private renderer: Renderer2) { }
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({
+      offset: 150,
+      duration: 800,
+      easing: 'ease-in-sine',
+      delay: 100,
+      once: false,
+    });
   }
   
   

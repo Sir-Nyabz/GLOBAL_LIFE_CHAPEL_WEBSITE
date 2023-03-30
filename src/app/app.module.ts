@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { LazyLoadImageModule } from 'ng-lazyload-image-angular-universal';
 
-import { AppRoutingModule, routingComponents } from './app-routing.module';
+import { routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ScheduleComponent } from './schedule/schedule.component';
@@ -15,7 +15,6 @@ import { ScheduleComponent } from './schedule/schedule.component';
 
   imports: [
     BrowserModule,
-    AppRoutingModule,
     LazyLoadImageModule
   ],
   
