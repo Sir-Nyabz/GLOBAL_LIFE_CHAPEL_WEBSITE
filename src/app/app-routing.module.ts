@@ -8,18 +8,8 @@ import { ChristForAllComponent } from './christ-for-all/christ-for-all.component
 import { GalleryComponent } from './gallery/gallery.component';
 
 
-const routes: Routes = [
-  {path:'', redirectTo:"/home", pathMatch:"full"},
-  {path:"home", component:HomeComponent},
-  {path: "glc", component: GlcComponent},
-  {path: "ourgeneraloverseer", component: OurGeneralOverseerComponent },
-  {path: "morningdevotion", component: MorningDevotionComponent},
-  {path:"christforall", component: ChristForAllComponent},
-  {path: "gallery", component: GalleryComponent }
-];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
