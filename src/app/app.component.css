@@ -12,6 +12,11 @@ body {
     overflow: hidden;
     height: 100vh;
   }
+
+  img.banner{
+    height: 95vh;
+    margin-top: 40px;
+  }
   
   .middle {
     margin-top: 20em
