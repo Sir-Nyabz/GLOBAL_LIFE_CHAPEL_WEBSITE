@@ -1,5 +1,5 @@
 #section{
-    background: linear-gradient(rgba(150, 184, 95, 0.6), rgba(144, 201, 22, 0.5)),url("/assets/01.jpg");
+    background: linear-gradient(rgba(150, 184, 95, 0.6), rgba(50, 71, 7, 0.5),rgba(144, 201, 22, 0.5),rgba(43, 60, 8, 0.5)),url("/assets/01.png");
     background-size: cover;
     background-attachment: fixed;
     -moz-background-size: cover;
@@ -8,6 +8,7 @@
     overflow: hidden;
     height: 100%;
     margin-top: 50px;
+    width:100%;
     }
   
     #icon{
@@ -16,7 +17,7 @@
      
     @media (max-width:360px) {
       #section {
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),url("/assets/01.jpg");
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),url("/assets/01.png");
         background-size: cover;
         background-attachment: fixed;
         -moz-background-size: cover;
