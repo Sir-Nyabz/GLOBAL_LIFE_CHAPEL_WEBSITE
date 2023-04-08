@@ -6,11 +6,12 @@ import { routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { Feed1000Component } from './feed1000/feed1000.component';
 
 @NgModule({
   declarations: [
     AppComponent, 
-    routingComponents, NavbarComponent, ScheduleComponent
+    routingComponents, NavbarComponent, ScheduleComponent, Feed1000Component
   ],
 
   imports: [
