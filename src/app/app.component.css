@@ -56,11 +56,11 @@ body {
     font-size: 1em;
   }
   
-  @media (max-width:360px) {
+  @media (max-width:748px) {
     section {
       background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("/assets/01.png");
-      background-size: cover;
-      background-attachment: fixed;
+      background-size: contain;
+      background-attachment:fixed;
       -moz-background-size: cover;
       -webkit-background-size: cover;
       -o-background-size: cover;
