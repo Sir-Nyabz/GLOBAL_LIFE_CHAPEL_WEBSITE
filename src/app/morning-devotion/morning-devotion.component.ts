@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-morning-devotion',
@@ -6,28 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./morning-devotion.component.css']
 })
 export class MorningDevotionComponent implements OnInit {
+  private screenWidth: number = 0;
 
-  constructor() { }
+  constructor() { 
+    this.screenWidth = window.innerWidth;
+  }
 
   ngOnInit(): void {
-    window.addEventListener('scroll',this.reveal);
 }
 
-reveal() {
-  var reveals=document.querySelectorAll('.reveal');
-
-  for(var i=0 ; i< reveals.length; i++){
-    var windowheight= window.innerHeight;
-    var revealtop=reveals[i].getBoundingClientRect().top;
-    var revealpoint=-150;
-
-    if(revealtop<windowheight-revealpoint){
-      reveals[i].classList.add('active');
-    }
-    else{
-      reveals[i].classList.remove('active');
-    }
+@HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.screenWidth = event.target.innerWidth;
   }
-}
+
+  isLargeScreen(): boolean {
+    return this.screenWidth > 768;
+  }
+
 }
 
