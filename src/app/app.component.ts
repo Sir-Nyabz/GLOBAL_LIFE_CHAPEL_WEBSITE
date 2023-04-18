@@ -10,6 +10,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 export class AppComponent {
   title = 'GLOBAL_LIFE_CHAPEL_WEBSITE';
 
+  imageUrl = '/assets/09.png';
+
   @ViewChild('container', { read: ViewContainerRef }) container!: ViewContainerRef;
   listener: any;
 

@@ -2,9 +2,8 @@
 
 <header class="animate" id="home">
 
-  <div>
     <div class="row">
-      <div class="col-lg-7 col-md-6 col-sm-12 text-center middle" id="home"
+      <!-- <div class="col-lg-7 col-md-6 col-sm-12 text-center middle" id="home"
         style="line-height: 2;">
         <h1 id="border"> A people fearfully and wonderfully made, blessed, and cannot be cursed</h1> <br />
         <button class="btn btn-outline-success">
@@ -15,9 +14,19 @@
       <div class="col-lg-5 col-md-6 col-sm-12">
         <img src="../assets/images/GLOBAL LIFE CHAPEL 191.svg" alt=""
           class="banner">
+      </div> -->
+    
+  
+
+
+      <div class="banner" [ngStyle]="{ 'background-image': 'url(https://sir-nyabz.github.io/global-life/assets/09.png)' }">
+        <div class="overlay"></div>
+        <div class="content">
+          <h1>A people fearfully and wonderfully made, blessed, and cannot be cursed</h1>
+          <p>Join us</p>
+        </div>
       </div>
-    </div>
-  </div>
+</div>
 </header>
 <br><br><br>
 
@@ -34,7 +43,9 @@
 <app-morning-devotion id="morningdevotion"></app-morning-devotion><br><br><br>
 <app-christ-for-all id="forall"></app-christ-for-all>
 
-<app-feed1000></app-feed1000>
+<app-feed1000></app-feed1000> <br><br><br><br>
+
+<app-feed-the-orphans></app-feed-the-orphans>
 
 <app-schedule id="schedule"></app-schedule>
 
