@@ -2,7 +2,7 @@ body {
     font-family: candara;
   }
   
-  /* header {
+  header {
     background: linear-gradient(rgba(150, 184, 95, 0.6), rgba(144, 201, 22, 0.5)), url("/assets/09.png");
     background-size: cover;
     background-attachment: fixed;
@@ -11,49 +11,64 @@ body {
     -o-background-size: cover;
     overflow: hidden;
     height: 100vh;
-  } */
+  }
 
-  .banner {
-    position: relative;
-    height: 800px;
+  img.banner{
+    height: 95vh;
+    margin-top: 40px;
+  }
+  
+  .middle {
+    margin-top: 20em
+  }
+  
+  #border {
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+  }
+  
+  #welcome {
+    line-height: 1;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: justify;
+  }
+  
+  #worship {
+    font-weight: bolder;
+    font-size: 50px;
+    line-height: 1em;
+  }
+  
+  section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("/assets/01.png");
     background-size: cover;
-    background-position: center;
+    background-attachment: fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+    height: 68vh;
   }
   
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+  #icon {
+    font-size: 1em;
   }
   
-  .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-  }
+  @media (max-width:748px) {
+    section {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("/assets/01.png");
+      background-size: contain;
+      background-attachment:fixed;
+      -moz-background-size: cover;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      overflow: hidden;
+      height: 100%;
+    }
   
-  h1 {
-    font-size: 3rem;
-    margin: 0;
+    #are {
+      padding-bottom: 2em;
+    }
   }
-  
-  p {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-  }
-  
-  /* Contrast of green and yellow colors */
-  h1 {
-    color: #84bd00;
-  }
-  
-  p {
-    color: #f2d601;
-  }
-  
