@@ -7,21 +7,17 @@
         <div class="row justify-content-center">
             <!-- Portfolio Item 1-->
             <div>
-
+                
             </div>
-            <div *ngIf="isLargeScreen(); else smallScreen" class="col-md-12 col-lg-12" data-aos="fade-left" data-aos-offset="100">
+            <div #myDiv class="col-md-12 col-lg-12" data-aos="fade-left" data-aos-offset="100">
+                <img class="chrisforall img-fluid responsive-svg rounded" [defaultImage]="'assets/image-loader.gif'"
+                    [lazyLoad]="'assets/images/GLOBAL LIFE CHAPEL 141.jpg'" alt="..." />
+            </div>
+
+            <div #myDiv class="col-md-12 col-lg-12" data-aos="fade-left" data-aos-offset="100">
                 <img class="chrisforall img-fluid responsive-svg rounded" [defaultImage]="'assets/image-loader.gif'"
                     [lazyLoad]="'assets/images/GLOBAL LIFE CHAPEL 195.svg'" alt="..." />
             </div>
-
-            <ng-template #smallScreen>
-                <div class="col-md-12 col-lg-12" data-aos="fade-left" data-aos-offset="100">
-                    <img class="chrisforall img-fluid responsive-svg rounded" [defaultImage]="'assets/image-loader.gif'"
-                        [lazyLoad]="'assets/images/GLOBAL LIFE CHAPEL 141.jpg'" alt="..." />
-                </div>
-              </ng-template>
-
-            
 
             <!-- Portfolio Item 4-->
             <div class="col-md-6 col-lg-4 chrisforalldesc" data-aos="fade-up" data-aos-offset="100" data-aos-duration="3000">

@@ -6,21 +6,19 @@ import { Component, ElementRef, HostListener, Renderer2, ViewChild, OnInit } fro
   styleUrls: ['./feed1000.component.css']
 })
 export class Feed1000Component implements OnInit {
-  private screenWidth: number = 0;
+  @ViewChild('myDiv') myDiv!: ElementRef;
 
-  constructor(private renderer: Renderer2) {
-    this.screenWidth = window.innerWidth;
-   }
+  constructor(private renderer: Renderer2) { }
 
   ngOnInit(): void {
   }
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
-    this.screenWidth = event.target.innerWidth;
-  }
-
-  isLargeScreen(): boolean {
-    return this.screenWidth > 768;
+    if (event.target.innerWidth < 768) {
+      this.renderer.setStyle(this.myDiv.nativeElement, 'display', 'block');
+    } else {
+      this.renderer.setStyle(this.myDiv.nativeElement, 'display', 'none');
+    }
   }
 }

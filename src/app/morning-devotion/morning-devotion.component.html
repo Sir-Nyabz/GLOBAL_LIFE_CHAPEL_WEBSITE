@@ -10,18 +10,11 @@
             <div class="col-md-2 col-lg-2">
               
             </div>
-            <div *ngIf="isLargeScreen(); else smallScreen" class="col-md-8 col-lg-8" data-aos="fade-left" data-aos-offset="100">
+            <div class="col-md-8 col-lg-8" data-aos="fade-left" data-aos-offset="100">
                 <img class="chrisforall img-fluid responsive-svg rounded" [defaultImage]="'assets/image-loader.gif'"
                     [lazyLoad]="'assets/images/GLOBAL LIFE CHAPEL 193.svg'" alt="..." />
             </div>
             <div class="col-md-2 col-lg-2">
-
-                <ng-template #smallScreen>
-                    <div class="col-md-12 col-lg-12" data-aos="fade-left" data-aos-offset="100">
-                        <img class="chrisforall img-fluid responsive-svg rounded" [defaultImage]="'assets/image-loader.gif'"
-                            [lazyLoad]="'assets/Global Life Chapel morning devotion image.jpeg'" alt="..." />
-                    </div>
-                  </ng-template>
               
             </div>
             <!-- Portfolio Item 4-->
