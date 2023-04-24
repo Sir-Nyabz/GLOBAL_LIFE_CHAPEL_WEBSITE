@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .page-section{
     margin-top: 100px;
 }
@@ -6,4 +7,16 @@
 
 .chrisforalldesc{
     margin-top: 2%;
+=======
+.page-section{
+    margin-top: 100px;
+}
+
+.chrisforall{
+    margin-left: 160px;
+}
+
+.chrisforalldesc{
+    margin-top: 2%;
+>>>>>>> dfe13eb999eacf4df21f0d47caadae146b72c598
   }
