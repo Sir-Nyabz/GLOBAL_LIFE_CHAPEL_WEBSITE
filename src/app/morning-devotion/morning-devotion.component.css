@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .background-image{
   margin-left: 260px;
 }
@@ -20,26 +19,3 @@
 }
 
 
-=======
-.background-image{
-    border-radius: 10px;
-}
-
-.devotion-description{
-    margin-top: 2%;
-  }
-
-@media only screen and (min-width: 768px){
-    .devotion-row{
-         margin-top: 30%; 
-    }
-}
-
-@media only screen and (max-width: 768px){
-    .devotion-row{
-         margin-top: 60%; 
-    }
-}
-
-
->>>>>>> dfe13eb999eacf4df21f0d47caadae146b72c598
