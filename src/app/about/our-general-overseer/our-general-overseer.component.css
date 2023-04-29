@@ -1,4 +1,7 @@
-
+img {
+  float: right;
+  margin: 0 10px;
+}
 
 iframe.rounded{
     width: 100%;

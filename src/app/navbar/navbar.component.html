@@ -33,8 +33,31 @@
         Morning Devotion
       </li>
 
-      <li class="nav-item list-line-item nav-link" (click)="toSchedule('forall')" routerLinkActive="active">
-        Christ for all
+      <li class="nav-item dropdown list-line-item dropdown-toggle" href="#" id="navbarDropdown" role="button"
+        data-toggle="dropdown" aria-expanded="false">
+        Others
+
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li class="dropdown-item nav-link" id="dropdown" (click)="toSchedule('forall')" routerLinkActive="active">
+            Christ for alll
+          </li>
+
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          <li class="dropdown-item nav-link" id="dropdown" (click)="toSchedule('feed1000')"
+            routerLinkActive="active">Feed One Thousand Homeless Project 2021
+          </li>
+
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          <li class="dropdown-item nav-link" id="dropdown" (click)="toSchedule('feedingtheorphans')"
+            routerLinkActive="active">Feeding the Orphans Every Week project
+          </li>
+        </ul>
       </li>
 
       <li class="nav-item list-line-item nav-link" (click)="toSchedule('schedule')" routerLinkActive="active">
