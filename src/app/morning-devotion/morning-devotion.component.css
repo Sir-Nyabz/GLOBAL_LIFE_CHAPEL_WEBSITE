@@ -1,21 +1,3 @@
-.background-image{
-  margin-left: 260px;
+.img{
+  justify-content: center;
 }
-
-.devotion-description{
-    margin-top: 2%;
-  }
-
-@media(min-width: 748px){
-    .devotion-row{
-         margin-top: 20%; 
-    }
-}
-
-@media(max-width: 748px){
-    .devotion-row{
-         margin-top: 60%; 
-    }
-}
-
-
