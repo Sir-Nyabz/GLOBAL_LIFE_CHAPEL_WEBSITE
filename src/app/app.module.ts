@@ -8,11 +8,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { Feed1000Component } from './feed1000/feed1000.component';
 import { FeedTheOrphansComponent } from './feed-the-orphans/feed-the-orphans.component';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
     AppComponent, 
-    routingComponents, NavbarComponent, ScheduleComponent, Feed1000Component, FeedTheOrphansComponent
+    routingComponents, NavbarComponent, ScheduleComponent, Feed1000Component, FeedTheOrphansComponent, BannerComponent
   ],
 
   imports: [
