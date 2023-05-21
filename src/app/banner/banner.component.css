@@ -4,7 +4,7 @@ body {
   
 
   #home {
-    background: linear-gradient(rgba(150, 184, 95, 0.6), rgba(144, 201, 22, 0.5)), url("/src/assets/9.png");
+    background: linear-gradient(rgba(150, 184, 95, 0.6), rgba(144, 201, 22, 0.5)), url("../../assets/9.jpg");
     background-size: cover;
     background-attachment: fixed;
     -moz-background-size: cover;
